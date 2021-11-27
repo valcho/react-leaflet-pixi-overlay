@@ -6,7 +6,7 @@ import L from 'leaflet';
 import * as PIXI from 'pixi.js';
 import 'leaflet-pixi-overlay';
 
-import { useLeafletMap } from 'use-leaflet';
+import { useMap } from 'react-leaflet';
 
 PIXI.settings.FAIL_IF_MAJOR_PERFORMANCE_CAVEAT = false;
 PIXI.utils.skipHello();
@@ -23,7 +23,7 @@ const PixiOverlay = ({
 
 	const [pixiOverlay, setPixiOverlay] = useState(null);
 	const [loaded, setLoaded] = useState(false);
-	const map = useLeafletMap();
+	const map = useMap();
 
 	// load sprites
 	useEffect(() => {
