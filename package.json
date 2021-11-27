@@ -23,7 +23,6 @@
   },
   "peerDependencies": {
     "leaflet": ">=1.6.0",
-    "react": ">=16.20.0",
     "react-leaflet": ">=3"
   },
   "devDependencies": {
